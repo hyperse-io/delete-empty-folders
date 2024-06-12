@@ -1,6 +1,6 @@
 {
   "name": "@hyperse/delete-empty-folders",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Recursively delete all empty folders in a directory and child directories.",
   "keywords": [
     "hyperse",
