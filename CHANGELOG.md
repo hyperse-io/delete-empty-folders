@@ -1,0 +1,1 @@
+# @hyperse/delete-empty-folders"
