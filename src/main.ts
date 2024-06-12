@@ -23,7 +23,7 @@ export const deleteEmpty = (cwd: string, options: Options = {}) => {
   const onDirectory = opts.onDirectory || (() => {});
   const empty: string[] = [];
 
-  const remove = async (filepath: string) => {
+  const remove = async (filepath: string): Promise<string[] | undefined> => {
     const dir = resolve(filepath);
 
     if (!isValidDir(cwd, dir, empty)) {
@@ -68,7 +68,7 @@ export const deleteEmptySync = (cwd: string, options: Options = {}) => {
   const opts = options || {};
   const empty: string[] = [];
 
-  const remove = (filepath: string) => {
+  const remove = (filepath: string): string[] => {
     const dir = resolve(filepath);
 
     if (!isValidDir(cwd, dir, empty)) {
